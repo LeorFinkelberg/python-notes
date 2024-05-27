@@ -1,4 +1,4 @@
-Иногда для работы с альтернативными способами создания экземпляра класса бывает полезно использовать фабричные методы
+Иногда для работы с альтернативными способами создания экземпляра класса бывает полезно использовать классовые методы
 ```python
 import inspect
 import typing as t
@@ -9,7 +9,7 @@ class Point(t.NameTuple):
 	z: float
 
     @classmethod
-    def make_zero_point(
+    def make_point(
         cls,
         x: float = 0.,
         y: float = 0.,
